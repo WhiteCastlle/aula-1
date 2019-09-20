@@ -1,0 +1,52 @@
+Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 20/09/2019
+Var
+// Seção de Declarações das variáveis 
+eleitores,a,b,c,i : inteiro
+voto : caracter
+
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+a <- 0
+b <- 0
+c <- 0
+escreval("Qual o total de participantes da eleição?")
+leia(eleitores)
+limpatela
+para i de 1 até eleitores faca
+escreval("Candidatos participantes:")
+escreval("A - Fulano")
+escreval("B - Joãozinho")
+escreval("C - Joelberson Dias")
+escreval("Qual seu voto?")
+escreva("(A-B-C): ")
+leia(voto)
+se (voto = "a") ou (voto="A") então
+a <- a + 1
+fimse
+se (voto = "b") ou (voto="B") então
+b <- b + 1
+fimse
+se (voto = "c") ou (voto="C") então
+c <- c+1
+fimse
+limpatela
+fimpara
+escreval("Resultado da eleição!!")
+se ((a > b) e (a > c)) então
+escreval("O Vencedor foi FULANO!!! Parabéns")
+senão ((b > a) e (b > c)) então
+escreval("O Vencedor foi JOÃOZINHO!!! Parabéns")
+senão ((c > b) e (c > a)) então
+escreval("O Vencedor foi Joelberson Dias!!! Parabéns")
+fimse
+escreval(" ")
+escreval("A - Fulano: ",a)
+escreval("B - Joãozinho: ",b)
+escreval("C - Joelberson Dias: ",c)
+Fimalgoritmo
